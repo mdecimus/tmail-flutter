@@ -47,10 +47,6 @@ class LoginView extends BaseLoginView {
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 67),
-                child: _buildAppLogo(context)
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 67),
                 child: Text(
                     AppLocalizations.of(context).signIn,
                     style: const TextStyle(fontSize: 32, color: AppColor.colorNameEmail, fontWeight: FontWeight.w900)
@@ -93,16 +89,7 @@ class LoginView extends BaseLoginView {
               })
             ],
           )
-        ),
-        Positioned.fill(
-          bottom: 24,
-          child: Align(
-            alignment: Alignment.bottomCenter,
-            child: SvgPicture.asset(
-              imagePaths.icPowerByLinagora,
-              width: 97,
-              height: 44,
-              fit: BoxFit.fill)))
+        )
       ],
     );
   }
@@ -124,46 +111,6 @@ class LoginView extends BaseLoginView {
                 Text(
                   AppLocalizations.of(context).jmapBasedMailSolution,
                   style: const TextStyle(fontSize: 36, color: AppColor.colorNameEmail, fontWeight: FontWeight.w900)
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 24),
-                  child: (SloganBuilder(arrangedByHorizontal: true, )
-                      ..setLogoSVG(imagePaths.icJMAPStandard)
-                      ..setSizeLogo(48.0)
-                      ..setPadding(const EdgeInsets.only(left: 12))
-                      ..setSloganText(AppLocalizations.of(context).jmapStandard)
-                      ..setSloganTextStyle(const TextStyle(fontSize: 24, fontWeight: FontWeight.w400, color: AppColor.colorNameEmail)))
-                    .build()
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 16),
-                  child: (SloganBuilder(arrangedByHorizontal: true, )
-                      ..setLogoSVG(imagePaths.icEncrypted)
-                      ..setSizeLogo(48.0)
-                      ..setPadding(const EdgeInsets.only(left: 12))
-                      ..setSloganText(AppLocalizations.of(context).encryptedMailbox)
-                      ..setSloganTextStyle(const TextStyle(fontSize: 24, fontWeight: FontWeight.w400, color: AppColor.colorNameEmail)))
-                    .build()
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 16),
-                  child: (SloganBuilder(arrangedByHorizontal: true, )
-                      ..setLogoSVG(imagePaths.icTeam)
-                      ..setSizeLogo(48.0)
-                      ..setPadding(const EdgeInsets.only(left: 12))
-                      ..setSloganText(AppLocalizations.of(context).manageEmailAsATeam)
-                      ..setSloganTextStyle(const TextStyle(fontSize: 24, fontWeight: FontWeight.w400, color: AppColor.colorNameEmail)))
-                    .build()
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 16),
-                  child: (SloganBuilder(arrangedByHorizontal: true, )
-                      ..setLogoSVG(imagePaths.icIntegration)
-                      ..setSizeLogo(48.0)
-                      ..setPadding(const EdgeInsets.only(left: 12))
-                      ..setSloganText(AppLocalizations.of(context).multipleIntegrations)
-                      ..setSloganTextStyle(const TextStyle(fontSize: 24, fontWeight: FontWeight.w400, color: AppColor.colorNameEmail)))
-                    .build()
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 44),
@@ -192,10 +139,6 @@ class LoginView extends BaseLoginView {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 66),
-                          child: _buildAppLogo(context)
-                        ),
                         Padding(
                           padding: const EdgeInsets.only(top: 67),
                           child: Text(
@@ -242,10 +185,6 @@ class LoginView extends BaseLoginView {
                     )
                   )
                 )
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 44, bottom: 10),
-                child: SvgPicture.asset(imagePaths.icPowerByLinagora, width: 97, height: 44, fit: BoxFit.fill)
               )
             ]
           )

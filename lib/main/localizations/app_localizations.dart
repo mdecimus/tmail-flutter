@@ -25,7 +25,7 @@ class AppLocalizations {
   }
 
   String get login_text_slogan {
-    return Intl.message('Team Mail',
+    return Intl.message('JMAP Playground',
         name: 'login_text_slogan');
   }
 
@@ -34,7 +34,7 @@ class AppLocalizations {
   }
 
   String get loginInputCredentialMessage {
-    return Intl.message('Enter your credentials to sign in', name: 'loginInputCredentialMessage');
+    return Intl.message('Use \'demo@stalw.art\' pass \'demo\' to login.', name: 'loginInputCredentialMessage');
   }
 
   String get next {
@@ -82,7 +82,7 @@ class AppLocalizations {
   }
 
   String get jmapBasedMailSolution {
-    return Intl.message('JMAP-based\ncollaborative team mail solution',
+    return Intl.message('JMAP playground',
         name: 'jmapBasedMailSolution');
   }
 
@@ -855,7 +855,7 @@ class AppLocalizations {
 
   String get app_name {
     return Intl.message(
-        'Tmail',
+        'JMAP Playground',
         name: 'app_name');
   }
 
@@ -1010,7 +1010,7 @@ class AppLocalizations {
 
   String get page_name {
     return Intl.message(
-        'Team - Mail',
+        'JMAP Playground',
         name: 'page_name');
   }
 

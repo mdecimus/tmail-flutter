@@ -6,7 +6,7 @@
     "placeholders_order": [],
     "placeholders": {}
   },
-  "login_text_slogan": "Team Mail",
+  "login_text_slogan": "JMAP Playground",
   "@login_text_slogan": {
     "type": "text",
     "placeholders_order": [],
@@ -724,7 +724,7 @@
     "placeholders_order": [],
     "placeholders": {}
   },
-  "page_name": "Team - Mail",
+  "page_name": "JMAP Playground",
   "@page_name": {
     "type": "text",
     "placeholders_order": [],
